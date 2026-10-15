@@ -37,7 +37,9 @@ Then open http://localhost:8080.
 
 1. Push this folder to a GitHub repo.
 2. Turn on **GitHub Pages** (Settings → Pages → Deploy from branch), or drag the folder into **Netlify Drop** / import it on **Vercel**.
-3. Make a 1200×630 `og-image.png` (a screenshot of a result card works well) and set `og:image` in `index.html` to its **absolute** URL. WhatsApp needs the absolute URL to show a rich link preview, and that preview is what makes people tap.
+3. If you host it at a different address, update `og:url` and `og:image` in `index.html`. WhatsApp needs an **absolute** URL to an image under ~300 KB to show the big link preview (`og-image.jpg` is 1200×630, ~90 KB).
+
+Live: https://onose-a-j.github.io/blockchain-don-talk/
 
 ## Deploy the contract (optional)
 
