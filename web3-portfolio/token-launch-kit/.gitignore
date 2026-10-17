@@ -1,0 +1,30 @@
+# secrets
+.env
+.env.*
+!.env.example
+*.key
+*keypair*.json
+id.json
+wallet*.json
+
+# foundry
+contracts/out/
+contracts/cache/
+contracts/broadcast/*/31337/
+contracts/broadcast/**/dry-run/
+# broadcast logs for real deploys are kept (they hold tx hashes, never keys)
+
+# node / next
+node_modules/
+site/.next/
+site/out/
+site/next-env.d.ts
+site/test-results/
+site/playwright-report/
+*.tsbuildinfo
+
+# rust / anchor (shared template)
+target/
+.anchor/
+
+.DS_Store
